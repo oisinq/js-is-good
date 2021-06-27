@@ -8,6 +8,7 @@ const person = {
 };
 
 const postcode = person.address.postcode;
+person.anotherAddress.postcode; // This will throw an error but JS won't say...
 
 const {
   age,

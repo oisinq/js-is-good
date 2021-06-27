@@ -1,4 +1,13 @@
-const person = {
+type Person = {
+  age: number;
+  name: string;
+  address: {
+    country: string;
+    postcode: string;
+  };
+};
+
+const person: Person = {
   age: 22,
   name: "Oisín",
   address: {
@@ -8,8 +17,7 @@ const person = {
 };
 
 const postcode = person.address.postcode;
-
-person.middleName; // Error! But TypeScript warns us.
+person.anotherAddress.postcode; // This will throw an error but TS tells us this!
 
 const {
   age,
