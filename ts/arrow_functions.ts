@@ -1,5 +1,5 @@
 // Lets make a function that calculates the square of a given number
-function oldStyleFunction(width) {
+function oldStyleFunction(width: number) {
   return width * width;
 }
 
@@ -13,7 +13,7 @@ let square = (width: number) => {
 };
 
 // or we simplify to...
-square = (width) => width * width;
+square = (width: number) => width * width;
 
 square(4); // 16
 

@@ -9,6 +9,8 @@ const person = {
 
 const postcode = person.address.postcode;
 
+person.middleName; // Error! But TypeScript warns us.
+
 const {
   age,
   name: myName,
